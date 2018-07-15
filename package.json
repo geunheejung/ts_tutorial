@@ -1,0 +1,16 @@
+{
+  "name": "typescript_tutoral",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "transfile": "tsc test.ts"
+  }
+}
