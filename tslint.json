@@ -4,11 +4,18 @@
         "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": {},
+    "rules": {
+        "no-console": [
+            false,
+            "log",
+            "error"
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape",
+            "avoid-template"
+        ]
+    },
     "rulesDirectory": [],
-    "no-console": [
-        false,
-        "log",
-        "error"
-    ]
 }
