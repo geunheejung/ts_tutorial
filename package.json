@@ -11,6 +11,6 @@
     "typescript": "^2.9.2"
   },
   "scripts": {
-    "transfile": "tsc test.ts"
+    "transfile": "tsc test3.ts"
   }
 }

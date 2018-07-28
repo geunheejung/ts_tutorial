@@ -5,5 +5,10 @@
     ],
     "jsRules": {},
     "rules": {},
-    "rulesDirectory": []
+    "rulesDirectory": [],
+    "no-console": [
+        false,
+        "log",
+        "error"
+    ]
 }
