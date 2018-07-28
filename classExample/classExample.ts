@@ -29,16 +29,31 @@
 // }
 // const person: Child = new Child();
 
+interface IPerson {
+  getName(): string;
+  setName(newName: string): void;
+}
+
 class Person {
-  constructor(protected _name: string, private _age: number) {
+  static HEIGHT: number = 160;
+  constructor(private _name: string, private _age: number) {
 
   }
 
   hello = (): void => {
     console.log(this._name);
   }
+
+  getName(): string {
+    return this._name;
+  }
+
+  setName(newName: string) {
+    this._name = newName;
+  }
 }
 const person: Person = new Person('Geuni', 19);
+console.log(Person.HEIGHT);
 
 class Child extends Person {
 
@@ -64,5 +79,7 @@ private 와 protected 차이
 1. 부모에서 private 으로 설정된 프로퍼티는 상속을 받은 자식에서도 접근 불가
 2. 부모에서 protected 로 설정된 프로퍼티는 상속을 받은 자식에서 접근 가능.
 3. 상속을 받은 자식 클래스에서 부모 클래스에 this를 통해 접근하려면 생성자에서 super();
+---
+상속을 받은 서브클래스에서는 생성자에서 super() 를 꼭 명시해줘야한다.
 */
 
