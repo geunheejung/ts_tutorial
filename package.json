@@ -11,6 +11,6 @@
     "typescript": "^2.9.2"
   },
   "scripts": {
-    "transfile": "tsc classExample/classExample2.ts"
+    "transfile": "tsc genericExample/generic1.ts"
   }
 }
